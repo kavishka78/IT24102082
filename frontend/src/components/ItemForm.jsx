@@ -51,6 +51,13 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         onChange={handleChange}
         required
       />
+      <label>Model Number</label>
+      <textarea
+        name="modelNumber"
+        rows="2"
+        value={formData.modelNumber}
+        onChange={handleChange}
+      />
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
